@@ -3,9 +3,9 @@ const packageInfo = require('../package.json')
 
 const provider = {
   type: 'provider',
-  name: 'koop-cli-new-provider',
+  name: 'koop-provider-dgt-datex',
   version: packageInfo.version,
-  hosts: true,
+  hosts: false,
   disableIdParam: true,
   Model: require('./model')
 }
