@@ -4,7 +4,6 @@ function Model (koop) {}
 // and format it into a geojson
 Model.prototype.getData = function (req, callback) {
 
-    // import parse from 'datex2-linker-api';
     const parse = require('datex2-linker-api');
 
     let source = "http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml"
@@ -27,7 +26,6 @@ Model.prototype.getData = function (req, callback) {
 
         let i = 1;
         geojson.features = res.map(el => {
-            // debugger;
             return {
               "type": "Feature",
               "geometry": {
@@ -65,8 +63,7 @@ Model.prototype.getData = function (req, callback) {
                 { name: 'stillImageFormat', type: 'String', alias: 'Image Format', length: 255},
                 { name: 'stillImageServiceLevel', type: 'Integer', alias: 'Image Service Level'},
                 { name: 'urlLinkAddress', type: 'String', alias: 'Image URL', length: 255},
-                { name: 'version', type: 'Integer', alias: 'Version'},
-
+                { name: 'version', type: 'Integer', alias: 'Version'}
             ]
         }
 

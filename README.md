@@ -1,31 +1,21 @@
-# koop-cli-new-project
+# koop-provider-dgt-datex
 
-A minimal Koop project template from [Koop CLI](https://github.com/koopjs/koop-cli).
+This is a [KoopJS provider](https://koopjs.github.io/docs/available-plugins/providers) to extract, transform and load cameras from [the service] of the [General Direction of Traffic of Spain](http://www.dgt.es/es/) as an ArcGIS Feature Service.
 
-See the [specification](https://koopjs.github.io/docs/usage/koop-core) for more details.
+![Screenshot](https://user-images.githubusercontent.com/826965/95004997-09878400-05f3-11eb-9379-595dba91369c.png)
 
-## Configuration
+## Run standalone provider
 
-This project is configured with [config](https://www.npmjs.com/package/config). As a community practice, it is recommanded to namespace the configuration for plugins in order to avoid any potential key conflict.
-
-## Development
-
-### Testing
-
-This project uses [mocah](https://www.npmjs.com/package/mocha) as the testing framework and [chaijs](https://www.chaijs.com/) as the assertion library. All test files in the `test` directory should have the special extension `.test.js`, which will be executed by the command:
+Just clone this repository, install the dependecies and run `koop serve`
 
 ```
-$ npm test
+$ git clone git@github.com:esri-es/koop-provider-dgt-datex.git
+$ npm install
+$ koop serve
 ```
 
-### Dev Server
+Then you are ready to go: `http://localhost:8080/koop-provider-dgt-datex/rest/services/FeatureServer/0/query`
 
-This project by default uses the [Koop CLI](https://github.com/koopjs/koop-cli) to set up the dev server. It can be invoded via
+You can test it using the [FeatureLayer sample code](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-featurelayer) replacing the `url` property at line 11.
 
-```
-$ npm start
-```
-
-The server will be running at `http://localhost:8080` or at the port specified at the configuration.
-
-For more details, check the [Koop CLI documentation](https://github.com/koopjs/koop-cli/blob/master/README.md).
+> To be able to run it on the ArcGIS Map Viewer you will need to serve it over HTTPs. For development environments you can use [ngrok](https://ngrok.com/).
