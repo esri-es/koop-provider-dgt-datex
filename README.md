@@ -1,6 +1,6 @@
 # koop-provider-dgt-datex
 
-This is a [KoopJS provider](https://koopjs.github.io/docs/available-plugins/providers) to extract, transform and load cameras from [the service] of the [General Direction of Traffic of Spain](http://www.dgt.es/es/) as an ArcGIS Feature Service.
+This is a [KoopJS provider](https://koopjs.github.io/docs/available-plugins/providers) to extract, transform and load cameras from [the service](http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml) of the [General Direction of Traffic of Spain](http://www.dgt.es/es/) as an ArcGIS Feature Service.
 
 ![Screenshot](https://user-images.githubusercontent.com/826965/95004997-09878400-05f3-11eb-9379-595dba91369c.png)
 
