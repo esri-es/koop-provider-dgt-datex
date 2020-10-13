@@ -42,6 +42,11 @@ koop serve
 
 Read: [export/README.md](./export/README.md)
 
+## More info
+
+* [DATEX II - Guía de Utilización](http://infocar.dgt.es/datex2/informacion_adicional/Guia%20de%20Utilizacion%20de%20DATEX%20II.pdf) (PDF in spanish)
+* [Listado de servicios para DATEX II](http://infocar.dgt.es/datex2/): cameras, panels, radars and more.
+
 ## Any questions?
 
 Feel free to ask using the [issues](https://github.com/esri-es/koop-provider-dgt-datex/issues).
