@@ -1,6 +1,6 @@
 {
   "name": "koop-provider-dgt-datex",
-  "version": "0.1.0",
+  "version": "0.2",
   "description": "Provider to convert http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml to ArcGIS Feature Service",
   "main": "src/index.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "mocha": "^7.1.0"
   },
   "repository": {
-      "type": "git",
-      "url": "git@github.com:esri-es/koop-provider-dgt-datex.git"
+    "type": "git",
+    "url": "git@github.com:esri-es/koop-provider-dgt-datex.git"
   },
   "keywords": [
     "koop",
@@ -33,7 +33,7 @@
   "author": "Raul Jimenez <raul.jimenez@esri.es>",
   "homepage": "https://github.com/esri-es/koop-provider-dgt-datex",
   "bugs": {
-  	"url": "https://github.com/esri-es/koop-provider-dgt-datex/issues"
+    "url": "https://github.com/esri-es/koop-provider-dgt-datex/issues"
   },
   "license": "Apache-2.0"
 }

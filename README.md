@@ -1,6 +1,6 @@
 # koop-provider-dgt-datex
 
-This is a [KoopJS provider](https://koopjs.github.io/docs/available-plugins/providers) to extract, transform and load cameras from [the service](http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml) of the [General Direction of Traffic of Spain](http://www.dgt.es/es/) as an ArcGIS Feature Service.
+This is a [KoopJS provider](https://koopjs.github.io/docs/available-plugins/providers) to extract, transform and load cameras and radars from [the service](http://infocar.dgt.es/datex2/dgt/CCTVSiteTablePublication/all/content.xml) of the [General Direction of Traffic of Spain](http://www.dgt.es/es/) as an ArcGIS Feature Service.
 
 ![Screenshot](https://user-images.githubusercontent.com/826965/95004997-09878400-05f3-11eb-9379-595dba91369c.png)
 
@@ -14,13 +14,15 @@ $ npm install
 $ koop serve
 ```
 
-Then you are ready to go: `http://localhost:8080/koop-provider-dgt-datex/rest/services/FeatureServer/0/query`
+Then you are ready to go: `http://localhost:8080/koop-provider-dgt-datex/{entity}/rest/services/FeatureServer/0/query`
+
+> {entity} can be: cameras, cabin_radars, segment_radars
 
 You can test it using the following [FeatureLayer sample](https://codepen.io/hhkaos/pen/WNwVMpY?editors=1000):
 
 [![Codepen screenshot](https://user-images.githubusercontent.com/826965/95006971-6fcbd100-060a-11eb-981b-824ea6dc8794.png).](https://codepen.io/hhkaos/pen/WNwVMpY?editors=1000)
 
-> **Note:** To be able to run it on the ArcGIS Map Viewer you will need to serve it over HTTPs. For development environments you can use [ngrok](https://ngrok.com/). Once installed, run: `ngrok http 127.0.0.1:8080` and open the domain it provides + `/koop-provider-dgt-datex/rest/services/FeatureServer/0/query`.
+> **Note:** To be able to run it on the ArcGIS Map Viewer you will need to serve it over HTTPs. For development environments you can use [ngrok](https://ngrok.com/). Once installed, run: `ngrok http 127.0.0.1:8080` and open the domain it provides + `/koop-provider-dgt-datex/cameras/rest/services/FeatureServer/0/query`.
 
 ## Install this provider in a new Koop hasOwnProperty
 
@@ -33,6 +35,10 @@ cd demo-app
 koop add provider koop-provider-dgt-datex
 koop serve
 ```
+
+## Export to GeoSJON
+
+Read: [export/README.md](./export/README.md)
 
 ## Any questions?
 

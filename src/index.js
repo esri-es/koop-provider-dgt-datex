@@ -5,7 +5,7 @@ const provider = {
   type: 'provider',
   name: 'koop-provider-dgt-datex',
   version: packageInfo.version,
-  hosts: false,
+  hosts: true,
   disableIdParam: true,
   Model: require('./model')
 }
